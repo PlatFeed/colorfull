@@ -1,0 +1,33 @@
+//-- Colors --
+$white: #fff !default;
+$black: #000000 !default;
+$dark: #3d3a3a !default;
+$yellow: #ffff00 !default;
+$red: #ff0000 !default;
+$orange: #ffa600 !default;
+$green: #1f7d53 !default;
+$blue: #0000ff !default;
+$info: #36b9ec !default;
+$danger: #ff3d3de7 !default;
+$light: #f1f4f6 !default;
+$warning: #ff6f2d !default;
+$success: #51f575 !default;
+$primary: #0c00af !default;
+$pink: #fa07bd !default;
+$purple: #ae00ff !default;
+$disabled: #666d74 !default;
+$default-color: rgb(211, 33, 86) !default;
+$theme-color: #f5f5f5 !default;
+
+//-- Font Sizes
+$font-0-575: 0.575rem !default;
+$font-1rem: 1rem !default;
+
+//-- Typography
+$font-cursiva: "cursiva" !default;
+
+//-- Text Transform
+$text-tranform-uppercase: text-transform "uppercase" !default;
+
+//-- Table
+$border-1: 1px solid $light !default;

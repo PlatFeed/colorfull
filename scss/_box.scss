@@ -1,0 +1,39 @@
+.box {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box-fluid {
+  width: 100%;
+  margin-left: 0.875rem;
+  margin-right: 0.875rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .box {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .box {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .box {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    max-width: 1140px;
+  }
+}

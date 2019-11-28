@@ -1,0 +1,63 @@
+//-- Box
+.box {
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box-fluid {
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -13px;
+  margin-right: -13px;
+}
+
+//--- Bucket ---
+.bucket {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .bucket {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bucket {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bucket {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bucket {
+    max-width: 1140px;
+  }
+}
+
+.bucket-fluid {
+  max-width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -1,0 +1,91 @@
+//-- Columns --
+.colm {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.colm-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.875rem;
+  margin-right: -0.875rem;
+}
+
+.colm,
+.colm-2,
+.colm-4,
+.colm-6,
+.colm-8,
+.colm-10,
+.colm-12,
+.colm-14,
+.colm-16,
+.colm-18,
+.colm-20,
+.colm-22,
+.colm-24 {
+  position: relative;
+  width: 100%;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  text-align: center;
+}
+
+.colm-2 {
+  flex: 85.33px / 1024px * 100%;
+  max-width: 85.33px / 1024px * 100%;
+}
+
+.colm-4 {
+  flex: 170.66px / 1024px * 100%;
+  max-width: 170.66px / 1024px * 100%;
+}
+
+.colm-6 {
+  flex: 255.99px / 1024px * 100%;
+  max-width: 255.99px / 1024px * 100%;
+}
+
+.colm-8 {
+  flex: 341.32px / 1024px * 100%;
+  max-width: 341.32px / 1024px * 100%;
+}
+
+.colm-10 {
+  flex: 426.65px / 1024px * 100%;
+  max-width: 426.65px / 1024px * 100%;
+}
+
+.colm-12 {
+  flex: 511.98px / 1024px * 100%;
+  max-width: 511.98px / 1024px * 100%;
+}
+.colm-14 {
+  flex: 597.31px / 1024px * 100%;
+  max-width: 597.31px / 1024px * 100%;
+}
+.colm-16 {
+  flex: 682.64px / 1024px * 100%;
+  max-width: 682.64px / 1024px * 100%;
+}
+.colm-18 {
+  flex: 767.97px / 1024px * 100%;
+  max-width: 767.97px / 1024px * 100%;
+}
+.colm-20 {
+  flex: 853.33px / 1024px * 100%;
+  max-width: 853.33px /1024px * 100%;
+}
+.colm-22 {
+  flex: 938.66px / 1024px * 100%;
+  max-width: 938.66px / 1024px * 100%;
+}
+.col-24 {
+  flex: 1024px / 1024px * 100%;
+  max-width: 1024px / 1024px * 100%;
+}

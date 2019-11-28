@@ -1,0 +1,629 @@
+//-- Buttons --//
+@mixin button() {
+  border-radius: 0.55rem;
+  display: inline-block;
+  border: 0.063rem solid transparent;
+  padding: 0.2rem 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition-duration: 0.5s;
+  outline: 0rem;
+
+  margin-top: 0.109375rem;
+  margin-bottom: 0.109375rem;
+  margin-left: 0.109375rem;
+  margin-right: 0.109375rem;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+//-- Block Buttons
+
+@mixin block-buttons {
+  display: block;
+  width: 100%;
+  + .btn-bck {
+    margin-top: 0px;
+  }
+  @include button();
+}
+
+.btn-lnk {
+  @include button();
+  background-color: transparent;
+  font-weight: 400;
+  color: $info;
+  text-decoration: none;
+  &:hover {
+    color: $dark;
+    text-decoration: underline;
+  }
+  &:focus {
+    text-decoration: underline;
+    box-shadow: none;
+    outline: 0rem;
+  }
+}
+
+.btn-bck-dng {
+  @include block-buttons();
+  background-color: $danger;
+  @include button();
+  &:hover {
+    color: $dark;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(250, 41, 86, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+//-- Button Colors
+.btn-wht {
+  background-color: $white;
+  color: $dark;
+  @include button();
+  border: 0.063rem solid $light;
+
+  &:hover {
+    color: $dark;
+    background-color: $white;
+  }
+
+  &:focus {
+    color: $dark;
+    box-shadow: 0 0 0 0.1rem rgb(245, 241, 242);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-grn {
+  background-color: $green;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    box-shadow: 0 0 0 0.1rem rgba(3, 119, 51, 0.639);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-blk {
+  background-color: $black;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    box-shadow: 0 0 0 0.1rem rgba(36, 36, 36, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-rd {
+  background-color: $red;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    color: $white;
+    box-shadow: 0 0 0 0.1rem rgba(246, 66, 105, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-dng {
+  background-color: $danger;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(250, 41, 86, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-lgt {
+  background-color: $light;
+  @include button();
+  color: $black;
+
+  &:hover {
+    color: $dark;
+    background-color: $light;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(240, 235, 235, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+    background-color: $light;
+  }
+}
+
+.btn-wng {
+  background-color: $warning;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(250, 188, 87, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-dk {
+  background-color: $dark;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(122, 122, 122, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-info {
+  color: $white;
+  background-color: $info;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(117, 184, 247, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-scs {
+  color: $white;
+  background-color: $success;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(111, 252, 92, 0.801);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-prm {
+  background-color: $primary;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    color: $white;
+    box-shadow: 0 0 0 0.1rem rgba(93, 91, 253, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-yl {
+  background-color: $yellow;
+  @include button();
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(248, 250, 114, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-org {
+  background-color: $orange;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(250, 219, 41, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-pk {
+  background-color: $pink;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(253, 58, 178, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+.btn-pl {
+  background-color: $purple;
+  color: $white;
+  @include button();
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(187, 23, 252, 0.822);
+    text-decoration: none;
+    outline: 0rem;
+  }
+}
+
+//-- Button Border Color --//
+.btn-ol-pk {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $pink;
+
+  &:focus {
+    background-color: $pink;
+    color: $white;
+    outline: 0rem;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(253, 58, 178, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-olh-pk {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $pink;
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $pink;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(253, 58, 178, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-yl {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $yellow;
+
+  &:hover {
+    background-color: $yellow;
+    color: $dark;
+    outline: 0rem;
+  }
+
+  &:focus {
+    background-color: $yellow;
+    color: $dark;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(248, 250, 114, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-wht {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $light;
+
+  &:hover {
+    background-color: $white;
+    color: $dark;
+  }
+
+  &:focus {
+    color: $dark;
+    border: 1px solid $white;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgb(243, 246, 244);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-grn {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $green;
+
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $green;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.1rem rgba(3, 119, 51, 0.639);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-blk {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $black;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $black;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(36, 36, 36, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-rd {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $red;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $red;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(246, 66, 105, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-wng {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $warning;
+
+  &:hover {
+    background-color: $warning;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $warning;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(250, 188, 87, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-info {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $info;
+
+  &:hover {
+    background-color: $info;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $info;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(117, 184, 247, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-dk {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $dark;
+
+  &:hover {
+    background-color: $dark;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $dark;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(122, 122, 122, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-dng {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $danger;
+
+  &:hover {
+    background-color: $danger;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $danger;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(250, 41, 86, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-scs {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $success;
+
+  &:hover {
+    background-color: $success;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $success;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.1rem rgba(111, 252, 92, 0.801);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-lgt {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $light;
+
+  &:hover {
+    background-color: $light;
+    color: $dark;
+  }
+
+  &:focus {
+    color: $dark;
+    background-color: $light;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.1rem rgba(240, 235, 235, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-prm {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $primary;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $primary;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(93, 91, 253, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-org {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $orange;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &:focus {
+    background-color: $orange;
+    color: $white;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.05rem rgba(250, 219, 41, 0.822);
+    text-decoration: none;
+  }
+}
+
+.btn-ol-pl {
+  @include button();
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $purple;
+
+  &:hover {
+    background-color: $purple;
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $purple;
+    outline: 0rem;
+    box-shadow: 0 0 0 0.1rem rgba(187, 23, 252, 0.822);
+    text-decoration: none;
+  }
+}
