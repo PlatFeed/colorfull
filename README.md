@@ -5,3 +5,4 @@ You only need to include the CSS file in HTML to link to the Colorful CSS style 
 CDN https://platfeed.com/cdn/colourful-css.min.css
 ### Documentation
 https://platfeed.com/docs/colourful
+* Copyright 2019 - PlatFeed
