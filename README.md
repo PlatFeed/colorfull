@@ -4,7 +4,7 @@ You only need to include the CSS file in HTML to link to the Colorful CSS style 
 ###  Quick install 
 CDN https://platfeed.com/cdn/colourful-css.min.css
 # HTML 5
-```
+```html
  <!DOCTYPE html>
    <html lang="en">
    <head>
