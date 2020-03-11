@@ -24,4 +24,6 @@ CDN https://platfeed.com/cdn/colourful-css.min.css
 ```
 ### Documentation
 https://platfeed.com/docs/colourful
-* Copyright 2019 - PlatFeed
+
+* PlatFeed 2020 - Copyright and license code released under the MIT license.
+
