@@ -22,7 +22,5 @@ CDN https://platfeed.com/cdn/colourful-css.min.css
    </body>
  </html>
 ```
-### Documentation
-https://platfeed.com/docs/colourful
 
 * PlatFeed 2020 - Copyright and license code released under [The MIT License](https://github.com/PlatFeed/colourful-css/blob/master/LICENSE/) 
