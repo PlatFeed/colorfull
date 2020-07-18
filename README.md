@@ -15,7 +15,7 @@ CDN https://platfeed.com/cdn/colorfull.min.css
    <!-- Title -->
     <title> Colourful CSS </title>
     <!-- CDN Colourful CSS -->
-    <link rel="stylesheet" href="https://platfeed.com/cdn/colourful-css.min.css">
+    <link rel="stylesheet" href="https://platfeed.com/cdn/colorfull.min.css">
    </head>
    <body>
    <h1> Hello, Colourful CSS </h1>
