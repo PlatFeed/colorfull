@@ -13,12 +13,12 @@ CDN https://platfeed.com/cdn/colorfull.min.css
     <meta name="viewport"content="width=device-width initial-scale=1.0">
     <meta  http-equiv="X-UA-Compatible" content="ie=edge">
    <!-- Title -->
-    <title> Colourful CSS </title>
-    <!-- CDN Colourful CSS -->
+    <title> Colorfull </title>
+    <!-- CDN Colorfull CSS -->
     <link rel="stylesheet" href="https://platfeed.com/cdn/colorfull.min.css">
    </head>
    <body>
-   <h1> Hello, Colourful CSS </h1>
+   <h1> Hello, Colorfull </h1>
    </body>
  </html>
 ```
